@@ -19,7 +19,7 @@ def add_user(username, real_name, password):
 
          with open(password_file, 'a') as savefile:
               save_user = f"{username.lower()}:{real_name}:{encoded_password}"
-              savefile.write(save_user + '\n')
+              savefile.write('\n' + save_user)
          
          print("User sucessfully Created.")
 
